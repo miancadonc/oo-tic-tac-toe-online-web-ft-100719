@@ -112,7 +112,8 @@ class TicTacToe
       puts "Congratulations #{self.winner}!"
     elsif self.draw?
       puts "Cat's Game!"
-    else self.turn
+    else
+      puts "I'm a bug!"
     end
   end
   
