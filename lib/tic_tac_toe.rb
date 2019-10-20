@@ -63,8 +63,7 @@ class TicTacToe
       self.display_board
     else
       puts "That move is invalid."
-      puts "Please make your move by entering a number 1-9:"
-      gets.chomp
+      self.turn
     end
   end
   
