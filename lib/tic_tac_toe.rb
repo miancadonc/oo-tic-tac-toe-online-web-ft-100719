@@ -63,8 +63,7 @@ class TicTacToe
       self.display_board
     else
       puts "That move is invalid."
-      puts "Please make your move by entering a number 1-9:"
-      gets.chomp
+      self.turn
     end
   end
   
@@ -108,12 +107,7 @@ class TicTacToe
   
   def play
     self.turn until self.over?
-    if self.won?
-      puts "Congratulations #{self.winner}!"
-    elsif self.draw?
-      puts "Cat's Game!"
-    else self.turn
-    end
+    self.draw? ?  puts("Cat's Game!") :  puts("Congratulations #{self.winner}!")
   end
   
 end
