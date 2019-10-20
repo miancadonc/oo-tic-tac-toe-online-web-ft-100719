@@ -107,7 +107,7 @@ class TicTacToe
   
   def play
     self.turn until self.over?
-    self.draw? ?  puts "Cat's Game!" :  puts "Congratulations #{self.winner}!"
+    self.draw? ?  puts("Cat's Game!") :  puts("Congratulations #{self.winner}!")
   end
   
 end
