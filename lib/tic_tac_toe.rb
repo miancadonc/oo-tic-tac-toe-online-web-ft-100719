@@ -98,7 +98,11 @@ class TicTacToe
   end
   
   def winner
-    self.won?.all?{|space|@board[space] == "X"} ? "X" : "O"
+    if self.won?
+      self.won?.all?{|space|@board[space] == "X"} ? "X" : "O"
+    else
+      nil
+    end
   end
   
   def play
